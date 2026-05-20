@@ -4,11 +4,9 @@ from mediator_pattern import ConcreteMediator, ConcreteColleague1, ConcreteColle
 from observer_pattern import ConcreteSubject, ConcreteObserver
 
 def demonstrate_iterator():
-    """Demonstrate the Iterator design pattern.
-    
-    The Iterator pattern provides a way to access elements of a collection
-    sequentially without exposing its underlying representation.
-    """
+    # Demonstrate the Iterator design pattern.
+    # The Iterator pattern provides a way to access elements of a collection
+    # sequentially without exposing its underlying representation.
     print("\n--- Iterator Pattern Demonstration ---")
     # Create a collection and populate it with items
     collection = ConcreteAggregate()
@@ -26,12 +24,10 @@ def demonstrate_iterator():
         print(item)
 
 def demonstrate_mediator():
-    """Demonstrate the Mediator design pattern.
-    
-    The Mediator pattern defines an object that encapsulates how a set of objects
-    interact, promoting loose coupling by keeping objects from referring to each
-    other explicitly.
-    """
+    # Demonstrate the Mediator design pattern.
+    # The Mediator pattern defines an object that encapsulates how a set of objects
+    # interact, promoting loose coupling by keeping objects from referring to each
+    # other explicitly.
     print("\n--- Mediator Pattern Demonstration ---")
     # Create two colleagues
     colleague1 = ConcreteColleague1()
@@ -48,12 +44,10 @@ def demonstrate_mediator():
     colleague2.do_something_c()
 
 def demonstrate_observer():
-    """Demonstrate the Observer design pattern.
-    
-    The Observer pattern defines a one-to-many dependency between objects such that
-    when one object changes state, all its dependents are notified and updated
-    automatically.
-    """
+    # Demonstrate the Observer design pattern.
+    # The Observer pattern defines a one-to-many dependency between objects such that
+    # when one object changes state, all its dependents are notified and updated
+    # automatically.
     print("\n--- Observer Pattern Demonstration ---")
     # Create a subject (observable)
     subject = ConcreteSubject()
